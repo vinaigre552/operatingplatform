@@ -1,18 +1,18 @@
-import type {ResponseData} from '@/api/user/type'
+import type { ResponseData } from '@/api/user/type'
 
 export interface TradeMark {
-    id?: number,
-    tmName: string,
-    logoUrl: string
+  id?: number
+  tmName: string
+  logoUrl: string
 }
 export type Records = [TradeMark]
-export interface  TradeMarkResponseData extends ResponseData {
-    data: {
-        records: Records,
-        total: number,
-        size: number,
-        current: number,
-        searchCount: boolean,
-        pages: number
-    }
+export interface TradeMarkResponseData extends ResponseData {
+  data: {
+    records: Records
+    total: number
+    size: number
+    current: number
+    searchCount: boolean
+    pages: number
+  }
 }
